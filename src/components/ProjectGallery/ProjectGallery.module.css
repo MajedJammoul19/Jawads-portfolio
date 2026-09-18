@@ -1,0 +1,64 @@
+.page {
+  background: var(--black);
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 48px var(--gutter) 64px;
+  color: var(--white);
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.back {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--white);
+  width: fit-content;
+}
+
+.headerText h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.headerText p {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.description {
+  margin-top: 16px;
+  max-width: 60ch;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #d6d6d6;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding-bottom: 2px;
+}
+
+.stack img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+}
+
+.notFound {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: var(--font, sans-serif);
+}
