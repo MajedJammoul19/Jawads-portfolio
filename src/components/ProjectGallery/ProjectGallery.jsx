@@ -32,7 +32,7 @@ function ProjectGallery() {
 
       <main className={styles.stack}>
         {project.images.map((src, i) => (
-          <img key={src} src={src} alt={`${project.title} — view ${i + 1}`} />
+          <img key={src} src={src} alt={`${project.title} — view ${i + 1}`} loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
         ))}
       </main>
     </div>

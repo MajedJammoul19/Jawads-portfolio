@@ -62,11 +62,12 @@
 
 .cover img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
-  /* تكبير الصورة بسلاسة مع تعديل بسيط للسطوع */
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
               filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  aspect-ratio: 4 / 3;
+
 }
 
 .card:hover .cover img {

@@ -20,7 +20,13 @@ function Projects() {
               {String(index + 1).padStart(2, '0')}
             </span>
             <div className={styles.cover}>
-              <img src={project.cover} alt={project.title} loading="lazy" />
+          <img
+    src={project.cover}
+    srcSet={`${project.coverSmall} 400w, ${project.cover} 1200w`}
+    sizes="(max-width: 600px) 400px, 1200px"
+    alt={project.title}
+    loading="lazy"
+  />
             </div>
             <div className={styles.cardFooter}>
               <h3>{project.title}</h3>
